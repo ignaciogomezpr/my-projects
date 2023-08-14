@@ -26,6 +26,6 @@ int years = 0:
     population = population + population/3 - population/4;
     years = years + 1;
 }
-    printf ("%s", years);
+    printf ("%i", years);
     // TODO: Print number of years
 }
