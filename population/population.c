@@ -12,6 +12,12 @@ population = get_int("Whats the llamas' population size?\n ");
     while (population <= 9);
 
     // TODO: Prompt for end size
+int endsize;
+do
+{
+endsize = get_int("Whats the llamas'  end size?\n ");
+}
+    while (population <= 9);
 
     // TODO: Calculate number of years until we reach threshold
 
