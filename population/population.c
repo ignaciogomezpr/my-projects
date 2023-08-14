@@ -7,7 +7,7 @@ int main(void)
 int population;
 do
 {
-population = get_int("Whats the llamas' population size?\n ");
+population = get_int("Whats the llama population size?\n ");
 }
     while (population <= 9);
 
@@ -15,9 +15,9 @@ population = get_int("Whats the llamas' population size?\n ");
 int endsize;
 do
 {
-endsize = get_int("Whats the llamas'  end size?\n ");
+endsize = get_int("Whats the llama population's end size?\n ");
 }
-    while (population <= 9);
+    while (endsize <= population);
 
     // TODO: Calculate number of years until we reach threshold
 
