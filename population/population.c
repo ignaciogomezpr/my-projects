@@ -20,6 +20,7 @@ endsize = get_int("Whats the llama population's end size?\n ");
     while (endsize <= population);
 
     // TODO: Calculate number of years until we reach threshold
+    while 
 
     // TODO: Print number of years
 }
