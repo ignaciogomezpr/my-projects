@@ -4,7 +4,7 @@
 int main(void)
 {
     // TODO: Prompt for start size
-int population
+int population;
 do
 {
  population = get_int("Whats the llama population size?\n");
@@ -24,7 +24,8 @@ while (population < endsize)
     population = population + population/3 - population/4;
     years = years + 1;
 }
-     printf ("%i", years);
+
     // TODO: Print number of years
+     printf ("%i"\n, years);
 }
- // TODO: Print number of years }
+
