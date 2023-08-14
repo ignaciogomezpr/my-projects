@@ -19,7 +19,7 @@ do
      while (endsize <= population);
     // TODO: Calculate number of years until we reach threshold
 int years = 0;
-while (population <= endsize)
+while (population < endsize)
 {
     population = population + population/3 - population/4;
     years = years + 1;
