@@ -26,6 +26,6 @@ while (population < endsize)
 }
 
     // TODO: Print number of years
-     printf ("%i"\n, years);
+     printf ("%i\n", years);
 }
 
