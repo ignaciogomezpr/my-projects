@@ -9,7 +9,7 @@ do
 {
  population = get_int("Whats the llama population size?\n");
 }
-while (population <= 9);
+while (population < 9);
     // TODO: Prompt for end size
 int endsize;
 do
