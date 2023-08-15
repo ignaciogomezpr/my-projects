@@ -9,7 +9,7 @@ int main(void)
     {
     size = get_int("What's the pyramid size? ");
     }
-    while (8 >= size <= 1);
+    while (size < 1 || 8 < size);
 //Creates pyramid
 
     for (int i = 0; i == size; i++)
