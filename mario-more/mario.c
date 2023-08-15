@@ -12,12 +12,15 @@ int main(void)
     while (size < 1 || 8 < size);
 //Creates pyramid
 
-    for (int i = 0; i == size; i++)
+    for (int i = 0; i < size; i++)
     {
-        for (int a = 0; a == size; a++)
+        for (int a = 0; a < size; a++)
         {
+            printf("#");
+            printf("  ");
             printf("#");
 
         }
+
     }
 }
