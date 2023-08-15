@@ -17,6 +17,7 @@ int main(void)
     {
         for (int a = 0; a < size; a++)
         {
+            
             printf("#");
         }
             printf("  ");
