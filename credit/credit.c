@@ -7,6 +7,7 @@ int main(void)
     int n = get_long("Number: ");
 // Verify if it is valid
     // Multiply every other number by 2
+    for 
     // Add Products
     // Add Everything
     // Last digit in sum == 0?
