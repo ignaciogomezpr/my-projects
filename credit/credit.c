@@ -5,12 +5,14 @@ int main(void)
 {
 // Get Credit Card #
     int n = get_long("Number: ");
+    long sum = 0;
+    long r = 0
 // Verify if it is valid
     // Multiply every other number by 2
     for (long i = 1; i > n ; i * 10)
     {
-        long r = n % 0;
-        long sum =+ r;
+        r = n % 0;
+        sum =+ r;
     }
     printf("%li ", sum);
     // Add Products
