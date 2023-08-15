@@ -15,20 +15,29 @@ int main(void)
 
     for (int i = 0; i < size; i++)
     {
-        for (int a = 0; a < i; a++)
+
+        for (int s = 0; s < size - i; s ++)
         {
-        for (int s = 0; s < 8  ; s --)
-        {
-            printf("%i", a);
             printf(" ");
         }
-            printf("#");
-        }
-            printf("  ");
+
         for (int a = 0; a < i; a++)
         {
             printf("#");
         }
-    printf("\n");
+
+            printf("  ");
+
+        for (int a = 0; a < i; a++)
+        {
+            printf("#");
+        }
+
+        for (int s = 0; s < size - i; s ++)
+        {
+            printf(" ");
+        }
+
+            printf("\n");
     }
 }
