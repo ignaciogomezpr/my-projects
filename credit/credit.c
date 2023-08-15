@@ -11,8 +11,8 @@ int main(void)
     // Multiply every other number by 2
     for (long i = 10; n / i > 0 ; i *= 10)
     {
-        r = n % i;
-        r *= 2
+        r = (n/i) % i;
+        r *= 2;
         sum += r;
     }
     printf("%li ", sum);
