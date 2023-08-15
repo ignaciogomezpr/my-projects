@@ -32,12 +32,7 @@ int main(void)
         {
             printf("#");
         }
-
-        for (int s = 0; s < size - i; s ++)
-        {
-            printf(" ");
-        }
-
+        
             printf("\n");
     }
 }
