@@ -15,13 +15,13 @@ int main(void)
 
     for (int i = 0; i < size; i++)
     {
-        for (int a = 0; a < size; a++)
+        for (int a = 0; a < i; a++)
         {
             
             printf("#");
         }
             printf("  ");
-        for (int a = 0; a < size; a++)
+        for (int a = 0; a < i; a++)
         {
             printf("#");
         }
