@@ -9,7 +9,7 @@ int main(void)
     long r = 0
 // Verify if it is valid
     // Multiply every other number by 2
-    for (long i = 1; i > n ; i * 10)
+    for (long i = 10; n / i < 0 ; i * 10)
     {
         r = n % 0;
         sum =+ r;
