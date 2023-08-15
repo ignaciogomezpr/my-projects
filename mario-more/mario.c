@@ -14,6 +14,11 @@ int main(void)
 
     for (int i = 0; i = size; i++)
     {
-        while 
+        for (int a = 0; a = size; a++)
+        {
+            
+            string row = ("%s  %s", # #)
+            printf()
+        }
     }
 }
