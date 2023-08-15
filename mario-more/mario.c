@@ -3,20 +3,20 @@
 
 int main(void)
 {
-//Get pyramid size
+    // Get pyramid size
     int size;
     do
     {
-    size = get_int("What's the pyramid size? ");
+        size = get_int("What's the pyramid size? ");
     }
     while (size < 1 || 8 < size);
 
-//Creates pyramid
+    // Creates pyramid
 
-    for (int i = 1; i < size  + 1; i++)
+    for (int i = 1; i < size + 1; i++)
     {
 
-        for (int s = 0; s < size - i; s ++)
+        for (int s = 0; s < size - i; s++)
         {
             printf(" ");
         }
@@ -26,13 +26,13 @@ int main(void)
             printf("#");
         }
 
-            printf("  ");
+        printf("  ");
 
         for (int a = 0; a < i; a++)
         {
             printf("#");
         }
 
-            printf("\n");
+        printf("\n");
     }
 }
