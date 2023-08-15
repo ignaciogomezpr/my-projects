@@ -16,9 +16,8 @@ int main(void)
     {
         for (int a = 0; a = size; a++)
         {
-            
-            string row = ("%s  %s", # #)
-            printf()
+            printf("#");
+
         }
     }
 }
