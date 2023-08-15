@@ -10,6 +10,7 @@ int main(void)
     // Add Products
     // Add Everything
     // Last digit in sum == 0?
+        //If Sum % 10 == 0: Valid
 // Verify if it is Master Card
 // Verify if it is Amex
 // Verify if it is Visa
