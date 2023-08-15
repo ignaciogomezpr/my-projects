@@ -19,8 +19,7 @@ int main(void)
             printf("#");
             printf("  ");
             printf("#");
-
+            prinf("\n")
         }
-
     }
 }
