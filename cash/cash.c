@@ -39,8 +39,10 @@ int get_cents(void)
 {
     int cents;
     do
-    
+    {
     cents = get_cents("How many cents is the customer owed? ");
+    }
+    while (cents < 0);
     return cents;
 }
 
