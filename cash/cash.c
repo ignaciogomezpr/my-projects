@@ -62,7 +62,7 @@ int calculate_quarters(int cents)
 int calculate_dimes(int cents)
 {
     int dimes = 0;
-    if (cents > 10)
+    if (cents > 9)
     {
     for (int i = 10; cents >= i ; i += 10)
     dimes += 1;
@@ -73,7 +73,7 @@ int calculate_dimes(int cents)
 int calculate_nickels(int cents)
 {
     int nickels = 0;
-    if (cents > 5)
+    if (cents > 4)
     {
     for (int i = 5; cents >= i ; i += 5)
     nickels += 1;
