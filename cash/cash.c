@@ -72,8 +72,13 @@ int calculate_dimes(int cents)
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    int nickels = 0;
+    if (cents > 5)
+    {
+    for (int i = 5; cents >= i ; i += 5)
+    nickels += 1;
+    }
+    return nickels;
 }
 
 int calculate_pennies(int cents)
