@@ -8,12 +8,8 @@ void print_bulb(int bit);
 
 int main(void)
 {
-    string msg = get_string("What's your bulb message? " );
-        for (int i = 0, lngt = strlen(msg); i < lngt; i++)
-        {
-             = msg[i];
-        }
-    printf("Your decimal array: %i", msg);
+
+    int bit
 }
 
 void print_bulb(int bit)
@@ -35,3 +31,7 @@ void print_bulb(int bit)
 
 int compute_binary(string msg);
 
+{
+
+}
+return bit
