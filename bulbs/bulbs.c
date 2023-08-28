@@ -7,9 +7,10 @@ const int BITS_IN_BYTE = 8;
 void print_bulb(int bit);
 
 int main(void)
-
 {
-    // TODO
+    string msg = get_string("What's your bulb message? " );
+    for i
+
 }
 
 void print_bulb(int bit)
