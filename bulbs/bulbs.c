@@ -4,12 +4,14 @@
 
 const int BITS_IN_BYTE = 8;
 
+int compute_binary(string msg);
 void print_bulb(int bit);
 
 int main(void)
 {
+    string msg = get_string("What's your message? " );
+    //TODO
 
-    int bit
 }
 
 void print_bulb(int bit)
@@ -32,6 +34,9 @@ void print_bulb(int bit)
 int compute_binary(string msg);
 
 {
-
+        for (int i = 0, lngt = strlen(msg); i < lngt; i++)
+        {
+             = msg[i];
+        }
 }
 return bit
