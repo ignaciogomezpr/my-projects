@@ -16,8 +16,9 @@ int main(int argc, string argv[])
 
     for (int i = 1, lngt = strlen(argv[1]), i < (lngt + 1) ; i++)
         {
-        if (!isdigit(argc[1][i])
+        if (!isdigit(argc[1][i]))
             {
-                pritn
+
+
             }
         }
