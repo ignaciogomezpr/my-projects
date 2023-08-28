@@ -36,7 +36,7 @@ int compute_binary(string msg);
 {
         for (int i = 0, lngt = strlen(msg); i < lngt; i++)
         {
-             = msg[i];
+             if int msg[i] 
         }
 }
 return bit
