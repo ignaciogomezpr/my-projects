@@ -12,7 +12,7 @@ int main(int argc, string argv[])
         {
             for (int c = 0; c < 9, c++)
             {
-                if argv[i] != numbers[c]
+                if argv[1][i] != numbers[c]
                 {
                 printf ("Usage: ./caesar key" );
                 }
