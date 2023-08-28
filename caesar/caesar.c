@@ -3,7 +3,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc < 3 && isalpha(argv[1]))
+    if (argc < 3 && isalpha(argv[1]) = 0 && is)
     {
 
     }
