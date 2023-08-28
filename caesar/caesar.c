@@ -3,7 +3,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc < 3 & argv[1])
+    if (argc < 3 & (argv[1]))
     {
 
     }
