@@ -9,7 +9,8 @@ void print_bulb(int bit);
 int main(void)
 {
     string msg = get_string("What's your bulb message? " );
-    for i
+        for (int i = 0, lngt = strlen(msg); i < lngt; i++)
+        
 
 }
 
