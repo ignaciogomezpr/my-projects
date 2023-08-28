@@ -4,9 +4,12 @@
 
 int main(int argc, string argv[])
 {
-    if (argc < 3 && isalpha(argv[1]) = 0 && argv[1] > 0)
+    if (argc < 3)
     {
-        printf ("working");
+    for (int i = 0, lngt = strlen(word); i < lngt; i++)
+        {
+
+        }
     }
 
 }
