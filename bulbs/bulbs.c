@@ -9,10 +9,10 @@ void print_bulb(int bit);
 int main(void)
 {
     string msg = get_string("What's your bulb message? " );
-
+    int nums[] = {}
         for (int i = 0, lngt = strlen(msg); i < lngt; i++)
         {
-            msg[i] = int msg[i];
+            nums[i] = msg[i];
         }
     printf("Your decimal array: %i", msg);
 }
