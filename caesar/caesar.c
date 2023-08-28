@@ -14,13 +14,6 @@ int main(int argc, string argv[])
     return 1;
     }
 
-
-
-        for (int i = 1, lngt = strlen(argv[1]), i < (lngt + 1) ; i++)
+    for (int i = 1, lngt = strlen(argv[1]), i < (lngt + 1) ; i++)
         {
-            for (int c = 0; c < 9, c++)
-            {
-                if argv[1][i] != numbers[c]
-                {
-
-                }
+        
