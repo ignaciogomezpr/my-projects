@@ -28,6 +28,6 @@ int main(int argc, string argv[])
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
         char plaintext[i];
-        if (plaintext[i])
+        if (plaintext[i]) 
     }
 }
