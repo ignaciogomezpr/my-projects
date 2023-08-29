@@ -11,7 +11,6 @@ int main(int argc, string argv[])
     if ( 1 < argc > 2)
     {
     printf ("Usage: ./caesar key" );
-    ok = 1;
     }
 
     //check if user inputs digit
@@ -20,9 +19,13 @@ int main(int argc, string argv[])
         if (!isdigit(argc[1][i]))
             {
                 printf ("Usage: ./caesar key" );
-                ok = 1;
+            }
+        else
+            {
+                
             }
     }
+
 
 
 
