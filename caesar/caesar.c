@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 
     int ok = 0;
     // Check if user inputs one key
-    if ( 1 >= argc  > 2)
+    if ( 1 >= argc || argc > 2)
     {
     printf ("Usage: ./caesar key" );
     }
