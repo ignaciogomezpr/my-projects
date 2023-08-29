@@ -8,17 +8,18 @@ int main(int argc, string argv[])
 
     int ok = 0;
     // Check if user inputs one key
-    if ( 1 < argc > 2)
+    if ( 1 >= argc  > 2)
     {
     printf ("Usage: ./caesar key" );
     }
 
     //check if user inputs digit
-    for (int i = 1, lngt = strlen(argv[1]), i < (lngt + 1) ; i++)
+    for (int i = 1, lngt = strlen(argv[1]); i < (lngt + 1) ; i++)
     {
-        if (!isdigit(atoi(argv[1][i])))
+        if (!isdigit(argv[1][i]))
             {
                 printf ("Usage: ./caesar key" );
             }
     }
-    printf ("ok!")
+    printf ("ok!");
+}
