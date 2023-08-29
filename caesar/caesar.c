@@ -10,7 +10,8 @@ int main(int argc, string argv[])
     // Check if user inputs one key
     if ( 1 >= argc || argc > 2)
     {
-    printf ("Usage: ./caesar key" );
+    printf ("Usage: ./caesar key \n");
+    return 1;
     }
 
     //check if user inputs digit
@@ -18,7 +19,8 @@ int main(int argc, string argv[])
     {
         if (!isdigit(argv[1][i]))
             {
-                printf ("Usage: ./caesar key" );
+                printf ("Usage: ./caesar key \n");
+                return 1;
             }
     }
     printf ("ok!");
