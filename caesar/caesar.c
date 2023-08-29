@@ -25,8 +25,9 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
     string plaintext = get_string("plain text: ");
 
-    for (i = 0, l = strlen(plaintext); i < l; i++)
+    for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
-        if 
+        char letter = plaintext[i];
+        if (letter)
     }
 }
