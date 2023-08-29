@@ -27,7 +27,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
-        char letter = plaintext[i];
-        if (letter)
+        char plaintext[i];
+        if (plaintext[i])
     }
 }
