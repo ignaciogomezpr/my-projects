@@ -21,13 +21,4 @@ int main(int argc, string argv[])
                 printf ("Usage: ./caesar key" );
             }
     }
-
-
-    string plaintext = get_string("plain text: ");
-
-    for (int i = 0, l = strlen(plaintext); i < l; i++)
-    {
-        char plaintext[i];
-        if (plaintext[i])
-    }
-}
+    printf ("ok!")
