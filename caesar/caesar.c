@@ -16,18 +16,18 @@ int main(int argc, string argv[])
     //check if user inputs digit
     for (int i = 1, lngt = strlen(argv[1]), i < (lngt + 1) ; i++)
     {
-        if (!isdigit(argc[1][i]))
+        if (!isdigit(atoi(argv[1][i])))
             {
                 printf ("Usage: ./caesar key" );
             }
     }
 
-    int key = atoi(argv[1]);
+
     string plaintext = get_string("plain text: ");
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
         char plaintext[i];
-        if (plaintext[i]) 
+        if (plaintext[i])
     }
 }
