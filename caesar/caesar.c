@@ -29,4 +29,5 @@ int main(int argc, string argv[])
     return 0;
 }
 
-    string 
+    string plaintext = get_string("plaintext: "):
+    
