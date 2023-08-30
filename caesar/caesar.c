@@ -35,7 +35,7 @@ int main(int argc, string argv[])
         if (isupper(plaintext[i]))
         {
             //new word = (word + key % 26) + 64
-            cyphertext [i] = ((int plaintext[i] + argv[1]) % 26) + 64;
+            cyphertext[i] = ((int plaintext[i] + key ) % 26) + 64;
         }
     }
 }
