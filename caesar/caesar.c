@@ -38,6 +38,10 @@ int main(int argc, string argv[])
             //new word = (word + key % 26) + 64
             cyphertext[i] = ((plaintext[i] - 'A' + key ) % 26) + 'A';
         }
+        if else (islower(plaintext[i]))
+        {
+            //new word = (word + key % 26) + 64
+            cyphertext[i] = ((plaintext[i] - 'A' + key ) % 26) + 'A';
     }
     printf("Ciphertext: %s\n", cyphertext);
 }
