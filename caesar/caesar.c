@@ -24,10 +24,14 @@ int main(int argc, string argv[])
                 return 1;
             }
     }
-
     printf ("ok! \n");
     return 0;
-}
 
     string plaintext = get_string("plaintext: "):
-    
+
+    for (int i = 0, l = strlen(plaintext); i < l; i++)
+    {
+        
+    }
+
+}
