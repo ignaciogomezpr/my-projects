@@ -27,16 +27,16 @@ int main(int argc, string argv[])
     printf ("ok! \n");
     return 0;
 
-    string plaintext = get_string("plaintext: "):
+    string plaintext = get_string("plaintext: ");
+    string cyphertext = "";
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
         // if uppercase
         if (isupper(plaintext[i]))
         {
-            //new word = word + key % 26
-
+            //new word = (word + key % 26) + 64
+            cyphertext += ((int plaintext[i] + argv[1]) % 26) + 64;
         }
     }
-
 }
