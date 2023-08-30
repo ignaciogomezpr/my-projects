@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
@@ -35,7 +36,7 @@ int main(int argc, string argv[])
         if (isupper(plaintext[i]))
         {
             //new word = (word + key % 26) + 64
-            cyphertext[i] = ((int plaintext[i] - 'A' + key ) % 26) + 'A';
+            cyphertext[i] = ((plaintext[i] - 'A' + key ) % 26) + 'A';
         }
     }
     printf("Ciphertext: %s\n", cyphertext);
