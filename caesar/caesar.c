@@ -1,8 +1,8 @@
 #include <cs50.h>
-#include <stdio.h>
 #include <ctype.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, string argv[])
 {
@@ -10,20 +10,20 @@ int main(int argc, string argv[])
     int ok = 0;
 
     // Check if user inputs one key
-    if ( argc != 2)
+    if (argc != 2)
     {
-    printf ("Usage: ./caesar key \n");
-    return 1;
+        printf("Usage: ./caesar key \n");
+        return 1;
     }
 
-    //check if user inputs digit
+    // check if user inputs digit
     for (int i = 1, lngt = strlen(argv[1]); i < (lngt); i++)
     {
         if (!isdigit(argv[1][i]))
-            {
-                printf ("Usage: ./caesar key \n");
-                return 1;
-            }
+        {
+            printf("Usage: ./caesar key \n");
+            return 1;
+        }
     }
 
     string plaintext = get_string("plaintext: ");
@@ -35,16 +35,16 @@ int main(int argc, string argv[])
         // if uppercase
         if (isupper(plaintext[i]))
         {
-            //new word = (word + key % 26) + 64
-            cyphertext[i] = ((plaintext[i] - 'A' + key ) % 26) + 'A';
+            // new word = (word + key % 26) + 64
+            cyphertext[i] = ((plaintext[i] - 'A' + key) % 26) + 'A';
         }
         // if lowercase
         else if (islower(plaintext[i]))
         {
-            //new word = (word + key % 26) + 64
-            cyphertext[i] = ((plaintext[i] - 'a' + key ) % 26) + 'a';
+            // new word = (word + key % 26) + 64
+            cyphertext[i] = ((plaintext[i] - 'a' + key) % 26) + 'a';
         }
-        //if anything else
+        // if anything else
         else
         {
             cyphertext[i] = plaintext[i];
