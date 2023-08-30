@@ -31,11 +31,11 @@ int main(int argc, string argv[])
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
+        // if uppercase
         if (isupper(plaintext[i]))
         {
-            
-            int placement = (plaintext[i])
-            plaintext[i] =
+            //new word = word + key % 26
+
         }
     }
 
