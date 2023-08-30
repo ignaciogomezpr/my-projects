@@ -31,7 +31,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
-        if (isupper(plaintext[i]) % )
+        if (plaintext[i]) % 64 > )
         {
             int placement = (plaintext[i])
             plaintext[i] =
