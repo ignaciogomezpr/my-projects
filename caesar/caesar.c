@@ -24,11 +24,10 @@ int main(int argc, string argv[])
                 return 1;
             }
     }
-    printf ("ok! \n");
-    return 0;
 
     string plaintext = get_string("plaintext: ");
-    string cyphertext = "";
+    int key = atoi(argv[1]);
+    char cyphertext[strlen(plaintext)];
 
     for (int i = 0, l = strlen(plaintext); i < l; i++)
     {
@@ -36,7 +35,7 @@ int main(int argc, string argv[])
         if (isupper(plaintext[i]))
         {
             //new word = (word + key % 26) + 64
-            cyphertext += ((int plaintext[i] + argv[1]) % 26) + 64;
+            cyphertext [i] = ((int plaintext[i] + argv[1]) % 26) + 64;
         }
     }
 }
