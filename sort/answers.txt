@@ -8,5 +8,5 @@ How do you know?:
 
 sort3 uses: TODO
 
-How do you know?: TODO
+How do you know?: 
 
