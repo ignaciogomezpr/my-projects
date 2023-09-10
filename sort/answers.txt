@@ -2,9 +2,9 @@ sort1 uses: Bubble Sort
 
 How do you know?: TODO
 
-sort2 uses: TODO
+sort2 uses: 
 
-How do you know?: TODO
+How do you know?:
 
 sort3 uses: TODO
 
