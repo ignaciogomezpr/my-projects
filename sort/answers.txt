@@ -1,6 +1,6 @@
 sort1 uses: Bubble Sort
 
-How do you know?: My 
+How do you know?: This algorithm scales as a O(n^2) when tasked with sorting random data sets, which means it's either a Merge Sort or a Bubble Sort.  When tasked with sorting sorted and reversed ordered data sets, this algorithms took substantially more time when sorting 
 
 sort2 uses: Merge Sort
 
