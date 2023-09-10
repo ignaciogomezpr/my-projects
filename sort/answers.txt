@@ -2,7 +2,7 @@ sort1 uses: Bubble Sort
 
 How do you know?: TODO
 
-sort2 uses: 
+sort2 uses: Merge Sort
 
 How do you know?:
 
