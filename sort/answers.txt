@@ -6,7 +6,7 @@ sort2 uses: Merge Sort
 
 How do you know?:
 
-sort3 uses: TODO
+sort3 uses: 
 
-How do you know?: 
+How do you know?:
 
