@@ -91,12 +91,13 @@ void print_winner(void)
             }
     }
 
+    string names = "";
     for (int i = 0; i < candidate_count; i++)
         {
         if (max_votes == candidates[i].votes)
             {
-                
-                printf ("%s \n", max_votes);
+                names = candidates[i].name;
+                printf ("%s \n", names);
             }
         }
 }
