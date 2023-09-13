@@ -1,12 +1,11 @@
 sort1 uses: Bubble Sort
 
-How do you know?: This algorithm scales as a O(n^2) when tasked with sorting random data sets, which means it's either a Merge Sort or a Bubble Sort.  When tasked with sorting sorted and reversed ordered data sets, this algorithms took substantially more time when sorting large reversed data sets.
+How do you know?: This algorithm has a time complexity of O(n^2) when tasked with sorting random data sets, which means it's either Selection Sort or a Bubble Sort.  When tasked with sorting sorted and reversed ordered data sets, this algorithms took substantially more time than sort3 when sorting large reversed data sets.
 
 sort2 uses: Merge Sort
 
-How do you know?: This algorithm is substantially faster than the other two algorithms, and scales as a O(logn).
+How do you know?: This algorithm is substantially faster than the other two algorithms, and its time complexity is of O(nlogn).
 
 sort3 uses: Select Sort
 
-How do you know?: This algorithm scales as a O(n^2) when tasked with sorting random data sets, which means it's either a Merge Sort or a Bubble Sort.  When tasked with sorting sorted and reversed ordered data sets, this algorithms took less time than sort1 time when sorting large reversed data sets.
-
+How do you know?: This algorithm has a time complexity of O(n^2) when tasked with sorting random data sets, which means it's either Selection Sort or a Bubble Sort.  When tasked with sorting sorted and reversed ordered data sets, this algorithms took less time than sort1 time while sorting large reversed data sets.
