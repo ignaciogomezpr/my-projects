@@ -95,7 +95,7 @@ void print_winner(void)
         {
         if (max_votes == candidates[i].votes)
             {
-                printf ("%s \n", candidates[i].name);
+                printf ("%s\n", candidates[i].name);
             }
         }
 }
