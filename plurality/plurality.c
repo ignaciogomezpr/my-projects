@@ -91,7 +91,6 @@ void print_winner(void)
             }
     }
     printf("%i \n", max_votes);
-    string names = "";
 
     for (int i = 0; i < candidate_count; i++)
         {
