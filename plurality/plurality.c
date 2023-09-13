@@ -57,9 +57,9 @@ int main(int argc, string argv[])
         {
             printf("Invalid vote.\n");
         }
-        else if (name==)
+        else if (vote(name))
         {
-
+            
         }
     }
 
