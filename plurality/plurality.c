@@ -59,7 +59,7 @@ int main(int argc, string argv[])
         }
         else if (vote(name))
         {
-            
+
         }
     }
 
