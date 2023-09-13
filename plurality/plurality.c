@@ -10,8 +10,7 @@ typedef struct
 {
     string name;
     int votes;
-}
-candidate;
+} candidate;
 
 // Array of candidates
 candidate candidates[MAX];
@@ -57,7 +56,6 @@ int main(int argc, string argv[])
         {
             printf("Invalid vote.\n");
         }
-
     }
 
     // Display winner of election
@@ -86,16 +84,16 @@ void print_winner(void)
     for (int i = 0; i < candidate_count; i++)
     {
         if (max_votes < candidates[i].votes)
-            {
-                max_votes = candidates[i].votes;
-            }
+        {
+            max_votes = candidates[i].votes;
+        }
     }
 
     for (int i = 0; i < candidate_count; i++)
-        {
+    {
         if (max_votes == candidates[i].votes)
-            {
-                printf ("%s\n", candidates[i].name);
-            }
+        {
+            printf("%s\n", candidates[i].name);
         }
+    }
 }
