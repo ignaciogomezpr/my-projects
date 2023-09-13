@@ -81,12 +81,14 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    for (int i = 1; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
-        if candidates[i].votes > candidates[i++].votes;
+        int max = candidates[0].votes;
+        if max > candidates[i].votes
         {
-            int highest = candidates[i].votes
+            max = candidates[i].votes;
         }
+        
 
     }
     return;
