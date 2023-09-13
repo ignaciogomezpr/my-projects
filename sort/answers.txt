@@ -4,7 +4,7 @@ How do you know?: This algorithm scales as a O(n^2) when tasked with sorting ran
 
 sort2 uses: Merge Sort
 
-How do you know?: This algorithm is substantially faster than the other two algorithms,  and the time it takes scales slower than the size of the data set.
+How do you know?: This algorithm is substantially faster than the other two algorithms, and scales as a O(logn).
 
 sort3 uses: Select Sort
 
