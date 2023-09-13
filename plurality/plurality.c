@@ -71,7 +71,7 @@ bool vote(string name)
     {
         if (name == (candidates[i].name))
         {
-            candidates[i].votes+=1;
+            candidates[i].votes += 1;
             return true;
         }
     }
@@ -90,13 +90,15 @@ void print_winner(void)
                 max_votes = candidates[i].votes;
             }
     }
-
+    printf("%i \n", max_votes);
+    string names = "";
 
     for (int i = 0; i < candidate_count; i++)
         {
         if (max_votes == candidates[i].votes)
             {
-                printf ("%s \n", candidates[i].name);
+                names = candidates[i].name;
+                printf ("%s \n", names);
             }
         }
 }
