@@ -83,7 +83,7 @@ void print_winner(void)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        candidates[i].votes
+        while candidates[i].votes
     }
     return;
 }
