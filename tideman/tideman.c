@@ -180,12 +180,16 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
-    for (i = 0; i < pair count; i++)
+    for (int i = 0; i < pair_count; i++)
     {
-        if
+        for (int j = i + 1; j < pair_count; j++)
         {
-        (locked[i][j] = true)
-        
+            if (locked[i][j] = true)
+            {
+                
+            }
+        }
+
     }
 
     return;
