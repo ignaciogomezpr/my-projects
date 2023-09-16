@@ -99,7 +99,13 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-    if (name ==)
+    // TODO
+     for (int i = 0; i < MAX; i++)
+    {
+        if (strcmp(name, candidates[i]) == 0)
+        {
+            ranks[] += ;
+        }
     return false;
 }
 
