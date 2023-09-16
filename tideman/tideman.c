@@ -16,8 +16,7 @@ typedef struct
 {
     int winner;
     int loser;
-}
-pair;
+} pair;
 
 // Array of candidates
 string candidates[MAX];
@@ -101,7 +100,7 @@ int main(int argc, string argv[])
 bool vote(int rank, string name, int ranks[])
 {
     // TODO
-     for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(name, candidates[i]) == 0)
         {
@@ -120,7 +119,7 @@ void record_preferences(int ranks[])
     {
         for (int j = i + 1; j < candidate_count; j++)
         {
-        preferences[ranks[i]][ranks[j]]++;
+            preferences[ranks[i]][ranks[j]]++;
         }
     }
     return;
@@ -130,21 +129,21 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-        for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         for (int j = i + 1; j < candidate_count; j++)
         {
             if (preferences[i][j] > preferences[j][i])
             {
-            pairs[pair_count].winner = i;
-            pairs[pair_count].loser = j;
-            pair_count ++;
+                pairs[pair_count].winner = i;
+                pairs[pair_count].loser = j;
+                pair_count++;
             }
             else if (preferences[j][i] > preferences[i][j])
             {
-            pairs[pair_count].winner = j;
-            pairs[pair_count].loser = i;
-            pair_count ++;
+                pairs[pair_count].winner = j;
+                pairs[pair_count].loser = i;
+                pair_count++;
             }
         }
     }
@@ -162,15 +161,16 @@ void sort_pairs(void)
         for (int i = 0; i < pair_count - 1; i++)
         {
             int margin_current = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
-            int margin_next = preferences[pairs[i + 1].winner][pairs[i + 1].loser] - preferences[pairs[i + 1].loser][pairs[i + 1].winner];
+            int margin_next =
+                preferences[pairs[i + 1].winner][pairs[i + 1].loser] - preferences[pairs[i + 1].loser][pairs[i + 1].winner];
 
-                if (margin_current < margin_next)
-                {
-                    pair temp = pairs[i];
-                    pairs[i] = pairs[i+1];
-                    pairs[i+1] = temp;
-                    swapped = true;
-                }
+            if (margin_current < margin_next)
+            {
+                pair temp = pairs[i];
+                pairs[i] = pairs[i + 1];
+                pairs[i + 1] = temp;
+                swapped = true;
+            }
         }
     }
     while (swapped);
