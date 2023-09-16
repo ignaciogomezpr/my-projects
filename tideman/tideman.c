@@ -187,12 +187,12 @@ void lock_pairs(void)
         bool cycle = false;
         for (int j = 0; j < candidate_count; j++)
         {
-            if locked[]
-
-            for (int )
+            if (locked[j][pairs[i].winner])
             {
-
-            }
+                for (int k = 0; candidate_count; k++)
+                {
+                    
+                }
         }
 
     }
