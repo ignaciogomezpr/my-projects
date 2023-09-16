@@ -215,8 +215,21 @@ bool creates_cycle(int start, int end)
 // Print the winner of the election
 void print_winner(void)
 {
-    // TODO
-    string winner = candidates[pair[i].winners];
-    printf("%s", winner);
-    return;
+    for (int i = 0; i < candidate_count; i++)
+    {
+        bool isWinner = true;
+        for (int j = 0; j < candidate_count; j++)
+        {
+            if (locked[j][i])
+            {
+                isWinner = false;
+                break;
+            }
+        }
+        if (isWinner)
+        {
+            printf("%s\n", candidates[i]);
+            return;
+        }
+    }
 }
