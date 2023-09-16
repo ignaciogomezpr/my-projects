@@ -137,22 +137,17 @@ void add_pairs(void)
             {
             pairs[].winner = i;
             pairs[].loser = j;
-            pair_count +=;
+            pair_count ++;
             }
             else if (preferences[j][i] > preferences[i][j])
             {
             pairs[].winner = j;
             pairs[].loser = i;
-            pair_count +=;
-            }
-            else (preferences[i][j] = preferences[j][i])
-            {
-            pair_count = pair_count;
+            pair_count ++;
             }
         }
     }
     return;
-
 }
 
 // Sort pairs in decreasing order by strength of victory
