@@ -102,9 +102,10 @@ bool vote(int rank, string name, int ranks[])
     // TODO
      for (int i = 0; i < MAX; i++)
     {
-        if (strcmp(name, candidates[i]) == 0)
+        if (name == candidates[i])
         {
             ranks[rank] = i;
+            printf("Ranks %i \n", ranks[i]);
             return true;
         }
     }
