@@ -122,6 +122,7 @@ void record_preferences(int ranks[])
         {
         preferences[ranks[i]][ranks[j]]++;
         }
+    }
     return;
 }
 
@@ -179,6 +180,7 @@ void sort_pairs(void)
 void lock_pairs(void)
 {
     // TODO
+    
     return;
 }
 
