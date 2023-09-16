@@ -216,6 +216,7 @@ bool creates_cycle(int start, int end)
 void print_winner(void)
 {
     // TODO
-    
+    string winner = candidates[pair[i].winners];
+    printf("%s", winner);
     return;
 }
