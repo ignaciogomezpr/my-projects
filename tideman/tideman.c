@@ -129,8 +129,9 @@ void record_preferences(int ranks[])
 void add_pairs(void)
 {
     // TODO
-    if (preferences[i][j] > preferences[j][i]) and or (preferences[i][j] < preferences[j][i])
+    if (preferences[i][j] > preferences[j][i])
     {
+    pairs[]
     pair_count +=;
     }
     return;
