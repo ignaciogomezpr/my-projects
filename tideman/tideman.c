@@ -154,9 +154,27 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     // TODO
-    return;
-}
+    bool swapped;
+    do
+    {
+        swapped = false;
+        for (int i = 0; i < pair_count; i++)
+        {
+            int margin_current = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
+            int margin_next = preferences[pairs[i + 1].winner][pairs[i + 1].loser] - preferences[pairs[i + 1].loser][pairs[i + 1].winner];
 
+                if (margin_current < margin_next)
+                {
+                    pair temp = pairs[i];
+                    pairs[i] = pairs[i+1];
+                    pairs[i+1] = temp;
+                    swapped = true;
+                }
+        }
+
+        return;
+    }
+}
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
