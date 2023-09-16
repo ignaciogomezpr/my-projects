@@ -171,8 +171,8 @@ void sort_pairs(void)
                     swapped = true;
                 }
         }
-        while (swapped);
     }
+    while (swapped);
     return;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
