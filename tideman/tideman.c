@@ -177,27 +177,39 @@ void sort_pairs(void)
     return;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
+bool creates_cycle();
 void lock_pairs(void)
 {
     // TODO
     for (int i = 0; i < pair_count; i++)
     {
-        locked[pairs[i].winner][pairs[i].loser] = true;
-
-        bool cycle = false;
-        for (int j = 0; j < candidate_count; j++)
+        if (!creates_cycle(pairs[i].winner, pairs[i].loser))
         {
-            if (locked[j][pairs[i].winner])
-            {
-                for (int k = 0; candidate_count; k++)
-                {
-                    
-                }
+            locked[pairs[i].winner][pairs[i].loser] = true;
         }
+    }
+    return;
+}
 
+bool creates_cycle(int start, int end)
+{
+    // Base case: If the end is the same as the start, a cycle is created.
+    if (start == end)
+    {
+        return true;
     }
 
-    return;
+    // Go through all candidates to check if there's a path from the end to the start.
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (locked[end][i] && creates_cycle(start, i))
+        {
+            return true;
+        }
+    }
+
+    // If no cycle is detected, return false.
+    return false;
 }
 
 // Print the winner of the election
