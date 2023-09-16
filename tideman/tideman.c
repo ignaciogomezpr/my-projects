@@ -158,7 +158,7 @@ void sort_pairs(void)
     do
     {
         swapped = false;
-        for (int i = 0; i < pair_count; i++)
+        for (int i = 0; i < pair_count - 1; i++)
         {
             int margin_current = preferences[pairs[i].winner][pairs[i].loser] - preferences[pairs[i].loser][pairs[i].winner];
             int margin_next = preferences[pairs[i + 1].winner][pairs[i + 1].loser] - preferences[pairs[i + 1].loser][pairs[i + 1].winner];
@@ -171,9 +171,9 @@ void sort_pairs(void)
                     swapped = true;
                 }
         }
-
-        return;
+        while (swapped);
     }
+    return;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
