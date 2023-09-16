@@ -185,7 +185,7 @@ void lock_pairs(void)
         if
         {
         (locked[i][j] = true)
-        }
+        
     }
 
     return;
